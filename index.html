@@ -60,20 +60,20 @@
 </head>
 
 <body>
-	<nav class="top-header">
+	<nav class="top-header" aria-label="navigation">
 		<h1 class="name">Nina Carducci</h1>
-		<div class="nav">
+		<div class="nav" aria-label="">
 			<ul>
-				<li><a href="#about">À propos</a></li>
-				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#services">Service</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about" aria-label="anchor">À propos</a></li>
+				<li><a href="#gallery" aria-label="anchor">Galerie</a></li>
+				<li><a href="#services" aria-label="anchor">Service</a></li>
+				<li><a href="#contact" aria-label="anchor">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.png" alt="Logo d'Instagram"></a></li>
+						target="_blank" aria-label="intagram link"><img src="assets/images/instagram.png" alt="Logo d'Instagram"></a></li>
 			</ul>
 		</div>
 	</nav>
-	<header id="header">
+	<header id="header" role="banner">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -98,19 +98,19 @@
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
+				data-bs-slide="prev" aria-label="previous button">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
 			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
+				data-bs-slide="next" aria-label="next button">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
 	</header>
-	<main>
-		<section id="about">
+	<main role="main content">
+		<section id="about" aria-label="region">
 			<div class="picture left">
 				<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
 			</div>
@@ -131,7 +131,7 @@
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
 		</section>
-		<section id="gallery">
+		<section id="gallery" aria-label="region">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
@@ -166,21 +166,21 @@
 			</div>
 			<div class="quote">
 				<figure>
-					<blockquote>
+					<blockquote aria-label="quote">
 						<h3 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
 							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
 							vérité.
 						</h3>
 					</blockquote>
-					<figcaption class="quote__author">- Richard Avedon</figcaption>
+					<figcaption class="quote__author" aria-label="quote author">- Richard Avedon</figcaption>
 				</figure>
 			</div>
 		</section>
-		<section id="services">
+		<section id="services" aria-label="region">
 			<h2 class="title">Mes services</h2>
 			<div class="container">
-				<article class="service">
+				<article class="service" role="complementary">
 					<div class="service__description">
 						<h3>Shooting photo</h3>
 						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace
@@ -192,7 +192,7 @@
 						<span>Matériel, déplacement inclus</span>
 					</div>
 				</article>
-				<article class="service">
+				<article class="service" role="complementary">
 					<div class="service__description">
 						<h3>Retouches</h3>
 						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
@@ -203,7 +203,7 @@
 						<span>2 AR par photo</span>
 					</div>
 				</article>
-				<article class="service">
+				<article class="service" role="complementary">
 					<div class="service__description">
 						<h3>Album photos</h3>
 						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers
@@ -217,7 +217,7 @@
 				</article>
 			</div>
 		</section>
-		<article class="quote">
+		<article class="quote" aria-label="complementary">
 			<figure>
 				<blockquote>
 					<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
@@ -227,12 +227,12 @@
 			</figure>
 		</article>
 	</main>
-	<footer id="contact">
+	<footer id="contact" role="contentinfo">
 		<div class="container">
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-				<form action="#" method="post">
+				<form action="#" method="post" role="form">
 					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
 					<label for="email">Email</label>
