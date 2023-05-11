@@ -2,13 +2,15 @@
 <html lang="fr">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
-		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
-	</script>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css">
+		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" defer>
+		</script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer>
+	<link rel="stylesheet" href="./assets/style.min.css" defer>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
 	<link rel="preconnect" media="print" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +23,6 @@
 			rel="stylesheet" type="text/css" />
 	</noscript>
 	<meta charset="UTF-8">
-	<script src="./assets/maugallery.min.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
 	<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
@@ -100,28 +100,17 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<picture>
-						<!-- <source media="(max-width: 768px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_medium.webp">
-						<source media="(max-width: 436px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_small.webp"> -->
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp" class="d-block"
-						alt="Photo d'un homme traversant un passage piéton">
-					</picture>
+					<img fetchpriority="high" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp"
+						class="d-block" alt="Photo d'un homme traversant un passage piéton">
 				</div>
 				<div class="carousel-item">
-					<picture>
-						<!-- <source media="(max-width: 768px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_medium.webp">
-						<source media="(max-width: 436px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_small.webp"> -->
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_large.webp" class="d-block"
-						alt="Photo de personnes qui célèbrent">
-					</picture>
+					<img fetchpriority="low" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_large.webp"
+						class="d-block" alt="Photo de personnes qui célèbrent">
 				</div>
 				<div class="carousel-item">
-					<picture>
-						<!-- <source media="(max-width: 768px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_medium.webp">
-						<source media="(max-width: 436px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_small.webp"> -->
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_large.webp" class="d-block"
+					<img fetchpriority="low"
+						src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_large.webp" class="d-block"
 						alt="Photo de jeunes mariés qui s'embrassent durant leur mariage">
-					</picture>
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
